@@ -1,10 +1,6 @@
 
-FROM gitpod/workspace-full
+FROM prodromou87/llvm
 
-RUN sudo apt-get update \
- && sudo apt-get install -y \
-    llvm \
- && sudo rm -rf /var/lib/apt/lists/*
 
 # Install custom tools, runtimes, etc.
 # For example "bastet", a command-line tetris clone:
